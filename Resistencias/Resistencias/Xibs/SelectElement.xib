@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ResistenciaVC" customModule="Resistencias" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAceptarColor" destination="6Vt-2O-zWa" id="cCu-nt-m1g"/>
+                <outlet property="pkList" destination="Voi-mA-RUQ" id="kyw-sV-h70"/>
+                <outlet property="vwContenedor" destination="7jS-nx-oxn" id="0oi-9a-hGU"/>
+                <outlet property="vwListView" destination="RPd-Sd-8dg" id="mmj-9v-FmI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RPd-Sd-8dg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jS-nx-oxn">
+                    <rect key="frame" x="0.0" y="185" width="375" height="297"/>
+                    <subviews>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Voi-mA-RUQ">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="216"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="216" id="lgr-IX-k8M"/>
+                            </constraints>
+                        </pickerView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vt-2O-zWa">
+                            <rect key="frame" x="157" y="232" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="TZN-k7-B0I"/>
+                                <constraint firstAttribute="height" constant="40" id="kQ3-P1-CAs"/>
+                            </constraints>
+                            <state key="normal" title="Aceptar"/>
+                            <connections>
+                                <action selector="aceptColor:" destination="-1" eventType="touchUpInside" id="ZAC-zH-uQy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="297" id="EWn-5w-MS9"/>
+                        <constraint firstItem="Voi-mA-RUQ" firstAttribute="top" secondItem="7jS-nx-oxn" secondAttribute="top" id="Igs-17-JaZ"/>
+                        <constraint firstItem="6Vt-2O-zWa" firstAttribute="top" secondItem="Voi-mA-RUQ" secondAttribute="bottom" constant="16" id="PrO-tI-yCG"/>
+                        <constraint firstItem="6Vt-2O-zWa" firstAttribute="centerX" secondItem="7jS-nx-oxn" secondAttribute="centerX" id="R2N-IP-6gt"/>
+                        <constraint firstItem="Voi-mA-RUQ" firstAttribute="centerX" secondItem="7jS-nx-oxn" secondAttribute="centerX" id="aRF-i3-ZUH"/>
+                        <constraint firstItem="Voi-mA-RUQ" firstAttribute="width" secondItem="7jS-nx-oxn" secondAttribute="width" id="fMs-rP-FtX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.68808861301369861" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7jS-nx-oxn" firstAttribute="centerY" secondItem="RPd-Sd-8dg" secondAttribute="centerY" id="0vM-DY-uos"/>
+                <constraint firstItem="7jS-nx-oxn" firstAttribute="width" secondItem="RPd-Sd-8dg" secondAttribute="width" id="gcy-iz-kAp"/>
+                <constraint firstItem="7jS-nx-oxn" firstAttribute="centerX" secondItem="RPd-Sd-8dg" secondAttribute="centerX" id="hvX-7V-6BJ"/>
+            </constraints>
+            <point key="canvasLocation" x="587.5" y="274.5"/>
+        </view>
+    </objects>
+</document>
